@@ -8,7 +8,7 @@ Para rodar esse projeto na sua máquina, é necessário:
 
 ```
  Visual Studio 2022
- MySQL WorkBench
+ Oracle SQL Developer
  PostMan
 ```
 
