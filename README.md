@@ -8,7 +8,7 @@ Para rodar esse projeto na sua máquina, é necessário:
 
 ```
  Visual Studio 2022
- Oracle SQL Developer
+ DBeaver
  PostMan
 ```
 
