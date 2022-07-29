@@ -1,16 +1,17 @@
-# Curso Alura #
+# ASP.NET Core REST APIs #
 
-Aqui vou colocar, o andamento do curso de API Rest com .NET 5, da Alura
+Aqui vou colocar, o andamento da formação do site da alura de ASP .NET Core REST APIs
 
 > Status: Em andamento
 
-Para rodar esse projeto na sua máquina, é necessário: 
+Está formação até o momento necessíta de: 
 
 ```
  Visual Studio 2022
  DBeaver
  PostMan
 ```
+> Com o tempo vou fazendo atualizações dos programas solicitados pela Alura.
 
 As configurações para o Visual Studio 2022 são: 
 
