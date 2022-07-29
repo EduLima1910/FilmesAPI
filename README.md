@@ -2,7 +2,8 @@
 
 Aqui vou colocar, o andamento da formação do site da alura de ASP .NET Core REST APIs
 
-> Status: Em andamento
+## Status:
+> Em andamento
 
 Está formação até o momento necessíta de: 
 
@@ -13,13 +14,13 @@ Está formação até o momento necessíta de:
 ```
 > Com o tempo vou fazendo atualizações dos programas solicitados pela Alura.
 
-As configurações para o Visual Studio 2022 são: 
+- **As configurações para o Visual Studio 2022 são:**
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/108417562/181818998-6898a738-e24a-45c8-bed3-98f528f99afd.png" />
 </div>
 
-Alguns pacotes do NuGet foram instalados, como:
+- **Alguns pacotes do NuGet foram instalados, como:**
 
 <div align="center">
 <img src="https://user-images.githubusercontent.com/108417562/181819045-7d26902b-13a3-459b-bd97-9df0e04cef88.png" />
@@ -30,3 +31,7 @@ Alguns pacotes do NuGet foram instalados, como:
 O bando de dados usado pela formação da Alura, foi o MySQL, mas na minha maquina
 <br>
 não foi possível fazer a instalação então o banco de dados usado foi o PostgreSQL
+
+## Alura
+- **Formação:**
+ Se você se interessar pelo projeto, faça o seu também, vá da uma olhada [aqui](https://cursos.alura.com.br/formacao-dotnet)
