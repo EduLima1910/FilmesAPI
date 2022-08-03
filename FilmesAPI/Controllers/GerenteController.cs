@@ -24,6 +24,8 @@ namespace FilmesAPI.Controllers
 
         }
 
+        [HttpPost]
+
         public IActionResult AdicionarGerente(CreateGerenteDto dto)
         {
 
@@ -34,6 +36,7 @@ namespace FilmesAPI.Controllers
 
         }
 
+        [HttpGet("{id}")]
         public IActionResult RecuperaGerentesPorId(int id)
         {
 
