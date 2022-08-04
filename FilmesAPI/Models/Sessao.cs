@@ -13,7 +13,7 @@ namespace FilmesAPI.Models
         public virtual Filme Filme { get; set; }
         public int FilmeId { get; set; }
         public int CinemaId { get; set; }
-        public DateTime HorarioDaSessao { get; set; }
+        public DateTime HorarioDeEncerramento { get; set; }
 
     }
 }

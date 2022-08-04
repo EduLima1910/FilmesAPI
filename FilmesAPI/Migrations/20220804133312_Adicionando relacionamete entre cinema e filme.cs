@@ -16,7 +16,7 @@ namespace FilmesAPI.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     FilmeId = table.Column<int>(type: "integer", nullable: false),
                     CinemaId = table.Column<int>(type: "integer", nullable: false),
-                    HorarioDaSessao = table.Column<DateTime>(type: "timestamp without time zone", nullable: false)
+                    HorarioDeEncerramento = table.Column<DateTime>(type: "timestamp without time zone", nullable: false)
                 },
                 constraints: table =>
                 {
