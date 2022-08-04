@@ -1,22 +1,22 @@
-﻿using AutoMapper;
+﻿
+using AutoMapper;
 using FilmesApi.Data;
 using FilmesAPI.Data;
+using FilmesAPI.Data.Dtos;
 using FilmesAPI.Data.Filme;
 using FilmesAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace FilmesAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-
     public class FilmeController : ControllerBase
     {
-
         private AppDbContext _context;
         private IMapper _mapper;
 
@@ -26,36 +26,31 @@ namespace FilmesAPI.Controllers
             _mapper = mapper;
         }
 
+
         [HttpPost]
-
-        public IActionResult Adicionafilme([FromBody] CreateFilmeDto filmeDto)
+        public IActionResult AdicionaFilme([FromBody] CreateFilmeDto filmeDto)
         {
-
             Filme filme = _mapper.Map<Filme>(filmeDto);
             _context.Filmes.Add(filme);
             _context.SaveChanges();
-            return CreatedAtAction(nameof(RecuperaFilmesPorId), new { id = filme.Id }, filme);
+            return CreatedAtAction(nameof(RecuperaFilmesPorId), new { Id = filme.Id }, filme);
         }
 
         [HttpGet]
-        public IEnumerable RecuperaFilmes()
+        public IEnumerable<Filme> RecuperaFilmes()
         {
-
             return _context.Filmes;
-
         }
 
         [HttpGet("{id}")]
         public IActionResult RecuperaFilmesPorId(int id)
         {
             Filme filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
-
             if (filme != null)
             {
-
                 ReadFilmeDto filmeDto = _mapper.Map<ReadFilmeDto>(filme);
-                return Ok(filmeDto);
 
+                return Ok(filmeDto);
             }
             return NotFound();
         }
@@ -74,21 +69,16 @@ namespace FilmesAPI.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult DelataFilme(int id)
+        public IActionResult DeletaFilme(int id)
         {
-
             Filme filme = _context.Filmes.FirstOrDefault(filme => filme.Id == id);
-
             if (filme == null)
             {
-
                 return NotFound();
-
             }
             _context.Remove(filme);
             _context.SaveChanges();
             return NoContent();
-
         }
 
     }
