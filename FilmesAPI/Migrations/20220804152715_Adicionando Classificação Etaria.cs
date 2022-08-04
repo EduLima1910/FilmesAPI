@@ -8,7 +8,7 @@ namespace FilmesAPI.Migrations
         {
             migrationBuilder.AddColumn<int>(
                 name: "ClassificacaoEtaria",
-                table: "Filme",
+                table: "Filmes",
                 type: "integer",
                 nullable: false,
                 defaultValue: 0);
@@ -18,7 +18,7 @@ namespace FilmesAPI.Migrations
         {
             migrationBuilder.DropColumn(
                 name: "ClassificacaoEtaria",
-                table: "Filme");
+                table: "Filmes");
         }
     }
 }

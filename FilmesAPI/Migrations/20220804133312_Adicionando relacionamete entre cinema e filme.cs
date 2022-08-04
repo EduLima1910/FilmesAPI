@@ -30,7 +30,7 @@ namespace FilmesAPI.Migrations
                     table.ForeignKey(
                         name: "FK_Sessoes_Filmes_FilmeId",
                         column: x => x.FilmeId,
-                        principalTable: "Filme",
+                        principalTable: "Filmes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
